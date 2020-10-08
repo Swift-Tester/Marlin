@@ -497,9 +497,14 @@
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
    // Creality Ender-3
-    #define DEFAULT_Kp 21.73
-    #define DEFAULT_Ki 1.54
-    #define DEFAULT_Kd 76.55
+   // #define DEFAULT_Kp 21.73
+   // #define DEFAULT_Ki 1.54
+   // #define DEFAULT_Kd 76.55
+   
+   // Copper Heatblock + 104GT-2 Thermistor (type 5)  Swift-Tester
+      #define DEFAULT_Kp 24.77
+      #define DEFAULT_Ki 1.78
+      #define DEFAULT_Kd 86.39
   #endif
 #endif // PIDTEMP
 
