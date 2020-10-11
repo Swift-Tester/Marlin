@@ -488,7 +488,6 @@
   //#define PID_PARAMS_PER_HOTEND // Uses separate PID parameters for each extruder (useful for mismatched extruders)
                                   // Set/get with gcode: M301 E[extruder number, 0-2]
 
-  // Creality Ender-3
   #if ENABLED(PID_PARAMS_PER_HOTEND)
     // Specify between 1 and HOTENDS values per array.
     // If fewer than EXTRUDER values are provided, the last element will be repeated.
@@ -496,9 +495,15 @@
     #define DEFAULT_Ki_LIST {   1.54,   1.54 }
     #define DEFAULT_Kd_LIST {  76.55,  76.55 }
   #else
-    #define DEFAULT_Kp  21.73
-    #define DEFAULT_Ki   1.54
-    #define DEFAULT_Kd  76.55
+   // Creality Ender-3
+   // #define DEFAULT_Kp 21.73
+   // #define DEFAULT_Ki 1.54
+   // #define DEFAULT_Kd 76.55
+   
+   // Copper Heatblock + 104GT-2 Thermistor (type 5)  Swift-Tester
+      #define DEFAULT_Kp 24.77
+      #define DEFAULT_Ki 1.78
+      #define DEFAULT_Kd 86.39
   #endif
 #endif // PIDTEMP
 
