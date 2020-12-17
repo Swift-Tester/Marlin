@@ -1030,8 +1030,8 @@
  * A total of 2 does fast/slow probes with a weighted average.
  * A total of 3 or more adds more slow probes, taking the average.
  */
-//#define MULTIPLE_PROBING 2
-//#define EXTRA_PROBING    1
+#define MULTIPLE_PROBING 2  //Swift-Tester
+#define EXTRA_PROBING    1  //Swift-Tester
 
 /**
  * Z probes require clearance when deploying, stowing, and moving between
@@ -1789,7 +1789,7 @@
  *
  * :['JAPANESE', 'WESTERN', 'CYRILLIC']
  */
-#define DISPLAY_CHARSET_HD44780 JAPANESE
+//#define DISPLAY_CHARSET_HD44780 JAPANESE  // Swift-Tester 
 
 /**
  * Info Screen Style (0:Classic, 1:Průša)
